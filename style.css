@@ -1,0 +1,226 @@
+body {
+	font-size: 1.5rem;
+	line-height: 1.2em;
+	background-color: #EDEDED;
+	margin: 0%;
+}
+
+main{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #da2089;
+}
+
+.logo{
+  width: 100px;
+}
+
+.annonce{
+  display: flex;
+  margin: 0%;
+}
+
+.annonce > *{
+  margin-right: 200px;
+}
+
+.annonce > div > a > img{
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.covoit{
+  display: flex;
+  margin: 0%;
+}
+
+.covoit :first-child{
+  margin-right: 50px;
+}
+
+.comp{
+  display: flex;
+  margin: 0%;
+}
+
+.comp :first-child{
+  margin-right: 200px;
+}
+
+
+
+.chiffres{
+  display: flex;
+  justify-content: space-around;
+}
+
+.width{
+  width: 40%;
+}
+
+.width1{
+  width: 80%;
+}
+
+
+
+.tri{
+width: 400px;
+}
+
+.form{
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.map{
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.warn{
+  text-decoration: underline ;
+  color: rgb(255, 0, 0);
+}
+
+form > div{
+  margin-bottom: 10px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: #ae2573;
+	margin-left: 0px;
+}
+
+nav :last-of-type{
+  margin-left: auto; 
+}
+
+nav > * {
+	margin: 20px;
+}
+
+footer {
+	background-color: #2a2f43;
+  color: #6e7bb1;
+	width: 100%;
+	height: 200px;
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  flex-basis: 0;
+}
+
+footer >a {
+  color: #6e7bb1;
+}
+
+.profile{
+  width: 50px;
+}
+
+.big{
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+
+
+  /* Dropdown menu */
+  .dropdownmenu,
+  .dropdownmenu ul {
+    /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 30px;
+    margin-right: 50%;
+    padding: 0px;
+  }
+  .dropdownmenu ul {
+    /* Masquage des sous-menu par defaut */
+    display: none;
+  }
+  .dropdownmenu li {
+    /* Disposition horizontale des elements de menu */
+    display: inline-block;
+  
+    /* Positionnement relative des elements de menu pour pouvoir positionner les 
+                     sous-menu correctement en absolu */
+    position: relative;
+  }
+  .dropdownmenu a {
+    /* On transforme les liens en bloc pour pouvoir les dimensionner */
+    display: block;
+  
+    /* Dimensions des liens */
+    width: 300px;
+    height: 50px;
+    line-height: 50px; /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+    padding: 3px 10px;
+  
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* avec le > on s'assure de ne pas afficher les sous-listes*/
+  .dropdownmenu li:hover > ul { 
+    /* Affichage du soumenu au survol */
+    display: block;
+  
+    /* Positionnement du sous-menu */
+    position: absolute;
+    top: 20px; /* Hauteur du menu + hauteur du padding top et bottom : 30 + 3 + 3 = 36 */
+    left: 0px; /* Decalage du sous-menu par rapport aux liens du menu*/
+    z-index: 100; /* Gestion de la superposition des sous-menus par rapport au reste de la page */
+  }
+  .dropdownmenu ul a {
+    /* Changement de l'affichage des liens des sous-menus pour ne pas les afficher
+                  en inline-block comme les liens de menu, ils seront donc verticaux */
+    display: block;
+  }
+  .dropdownsubmenu > a::after {
+    content: "›";
+  }
+  .dropdownsubmenu ul {
+    position: absolute;
+    top: 0px !important; 
+    left: 120px !important; 
+  }
+  
+  /* Gestion des couleurs */
+  
+  .dropdownmenu li a {
+    color: #fff; /* Couleur du texte du menu */
+    font-size: 2.3rem;
+  }
+  .dropdownmenu li:hover {
+    background-color: #942262; /* Couleur d'arriere-plan du menu au survol */
+  }
+  .dropdownmenu li:hover a {
+    color: #fff; /* Couleur du texte du menu au survol */
+  }
+  .dropdownmenu ul li {
+    background-color: #942262; /* Couleur d'arriere-plan des sous-menu */
+  }
+  .dropdownmenu ul li:hover {
+    background-color: #792153; /* Couleur d'arriere-plan des sous-menu au survol */
+  }
+  
+
+.ulille{
+  margin-top:30px;
+  margin-bottom: 30px;
+  margin-left: -500px;
+  width: 300px;
+}

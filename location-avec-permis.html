@@ -2,33 +2,59 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet">
         <title>Covoit'</title>
     </head>
     <body>
         <header>
             <nav>
-                <a href="profile.html">Profile</a>
-                <a href="regles.html">Régles</a>
-                <div>
-                    <p>Location:</p>
-                    <a href="location-avec-permis.html">avec permis</a><br />
-                    <a href="location-sans-permis.html">sans permis</a>
-                </div>
-                <div>
-                    <p>Covoiturage:</p>
-                    <a href="covoiturage-depot.html">depot</a><br />
-                    <a href="covoiturage-disponible.html">sans permis</a>
-                </div>
+                <a href="index.html"><img class="logo" src="img/Covoit.png"></a>
+
+                <ul class="dropdownmenu">
+                <li><a href="#">Location:</a>
+                  <ul>
+                    </li>
+                    <li><a href="location-avec-permis.html">Avec permis</a></li>
+                    <li><a href="location-sans-permis.html">Sans Permis</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Covoiturage:</a>
+                    <ul>
+                      </li>
+                      <li><a href="covoiturage-depot.html">Depot d'annonce</a></li>
+                      <li><a href="covoiturage-disponible.html">Page des annonces</a></li>
+                    </ul>
+                  </li>
+              </ul>
+
+                <a href="profile.html"><img class="profile" src="img/profile.svg"></a>
             </nav>
         </header>
-        <main>
-            <a href="location-annonce.html">Annonce 1</a>
-            <a href="location-annonce.html">Annonce 2</a>
-            <a href="location-annonce.html">Annonce 3</a>
-            <a href="location-annonce.html">Annonce 4</a>
-            <a href="location-annonce.html">Annonce 5</a>
-            <a href="location-annonce.html">Annonce 6</a>
-            <a href="location-annonce.html">Annonce 7</a>
+        <main class="covoit">
+            <!--    Contenu de la page      -->
+            
+            <div>
+                <img class="tri" src="img/tri.png">
+            </div>
+
+            <div class="grid">
+                <a href="location-annonce.html" ><img src="img/permiss1.PNG"></a>
+                <a href="location-annonce.html"  ><img src="img/permiss2.PNG"></a>
+            </div>
+
+
+
+
+            <!--    Contenu de la page      -->
         </main>
+        <footer>
+            <img class="ulille" src="img/logo-ULille.c143519b.png">
+            <div>
+                <p>
+                    <a href="reglement.html">Régles</a> <br>
+                    <p>Copyright © 2020 - 2021 Université de Lille</p>
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
